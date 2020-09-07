@@ -1,5 +1,4 @@
-# hackaton2020
-Proyecto Para Hackaton2020 
+# Proyecto Para Hackaton2020 
 
 Integrantes: 
 
