@@ -164,7 +164,7 @@ html{
   padding:0;
 }
 
-.modal-content-inicio-sesion{
+.modal-content{
   background-color: #60AF13;
   opacity:.90;
   padding: 0 20px;
@@ -207,13 +207,6 @@ html{
   padding:0;
 }
 
-.modal-content-registro{
-  background-color: #60AF13;
-  opacity:.90;
-  padding: 0 20px;
-  box-shadow: 0px 0px 3px #848484;
-
-}
 .reg-text-registro{
   font-size:30px;
 }
