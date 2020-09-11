@@ -3,6 +3,7 @@ body {
   background-color: #E0FFFF;
   height: 100%
 }
+
 @media (max-width: 979px) {
   body {
     padding-top: 100px;
@@ -16,6 +17,16 @@ html{
     margin: 0;
     padding: 0;
 }
+#fondo1{
+   background: url(../Imagenes/bosque.jpg)no-repeat center center fixed;
+   background-size: cover;
+}
+#fondo2{
+   background: url(../Imagenes/bosque1.jpg)no-repeat center center fixed;
+   background-size: cover;
+}
+
+
 
  /* The side navigation menu */
 .sidenav {
@@ -146,5 +157,116 @@ html{
 #envia {
   height: 18%;
   width: 100%;
+}
+.inicio-sesion{
+  margin: 0 auto;
+  margin-top: 25%;
+  padding:0;
+}
+
+.modal-content-inicio-sesion{
+  background-color: #60AF13;
+  opacity:.90;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px #848484;
+
+}
+
+.user-img-inicio-sesion{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.user-img-inicio-sesion img{
+  width: 100px;
+  height: 100px;
+}
+.form-group-inicio-sesion input{
+  height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+.form-group-inicio-sesion::before{
+  font-family: "Font Awesome\ 5 Free";
+  position: absolute;
+  left:28px;
+  font-size: 22px;
+  padding-top:4px;
+}
+.form-group-inicio-sesion#correo::before{
+  content :"\f0e0";
+}
+.form-group-inicio-sesion#contrasena::before{
+  content :"\f023";
+}
+.registro{
+  margin: 0 auto;
+  margin-top: 15%;
+  padding:0;
+}
+
+.modal-content-registro{
+  background-color: #60AF13;
+  opacity:.90;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px #848484;
+
+}
+.reg-text-registro{
+  font-size:30px;
+}
+.reg-img-registro{
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.reg-img-registro img{
+  width: 100px;
+  height: 100px;
+}
+
+.form-group-registro input{
+  height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+.form-group-registro::before{
+  font-family: "Font Awesome\ 5 Free";
+  position: absolute;
+  left:28px;
+  font-size: 22px;
+  padding-top:4px;
+}
+.form-group-registro#nombre::before{
+  content :"\f007";
+}
+.form-group-registro#correo::before{
+  content :"\f0e0";
+}
+.form-group-registro#contrasena::before{
+  content :"\f023";
+}
+.form-group-registro#contrasenac::before{
+  content :"\f023";
+}
+input[type=checkbox]
+{
+  transform: scale(1.5);
+  padding: 10px;
+}
+
+.checkboxtexto
+{
+  padding:10px;
+  font-size: 110%;
+  display: inline;
+}
+button{
+  width: 60%;
+    margin: 5px 0 25px;
 }
 
