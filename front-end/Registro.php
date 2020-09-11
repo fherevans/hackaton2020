@@ -27,7 +27,7 @@
 <body id=fondo2>
 	<div class="modal-dialog text-center">
 		<div class="col-sm-8 registro">
-			<div class = "modal-content-registro">
+			<div class = "modal-content">
 				<div class= "col-12 reg-img-registro">
 					<h2><i>Registro</i></h2>
 					<img src="Imagenes/ARDILLA5.png"/>

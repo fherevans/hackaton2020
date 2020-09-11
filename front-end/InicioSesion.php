@@ -15,12 +15,11 @@
 
     <!-- Css-->
     <link rel="stylesheet" type="text/css" href="CSS/styles.css" th:href="@{/CSS/styles.css}">
-</html>
 </head>
 <body id=fondo1>
 	<div class="modal-dialog text-center">
 		<div class="col-sm-8 inicio-sesion">
-			<div class = "modal-content-inicio-sesion">
+			<div class = "modal-content">
 				<div class= "col-12 user-img-inicio-sesion">
 					<img src="Imagenes/ARDILLA6.png"/>
 				</div>
@@ -38,9 +37,9 @@
 					<button type = "submit" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i>  Iniciar Sesión </button>
 					<button type = "submit" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i>  Regresar </button>
 				</form>
-			</div>
 		</div>
 	</div>
+</div>
 
 </body>
 </html>
