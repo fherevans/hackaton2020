@@ -1,0 +1,73 @@
+body{
+	background: url(../img/bosque1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.main-section{
+	margin: 0 auto;
+	margin-top: 15%;
+	padding:0;
+}
+
+.modal-content{
+	background-color: #60AF13;
+	opacity:.90;
+	padding: 0 20px;
+	box-shadow: 0px 0px 3px #848484;
+
+}
+.reg-text{
+	font-size:30px;
+}
+.reg-img{
+	margin-top: 10px;
+	margin-bottom: 35px;
+}
+
+.reg-img img{
+	width: 100px;
+	height: 100px;
+}
+
+.form-group input{
+	height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+.form-group::before{
+	font-family: "Font Awesome\ 5 Free";
+	position: absolute;
+	left:28px;
+	font-size: 22px;
+	padding-top:4px;
+}
+.form-group#nombre::before{
+	content :"\f007";
+}
+.form-group#correo::before{
+	content :"\f0e0";
+}
+.form-group#contrasena::before{
+	content :"\f023";
+}
+.form-group#contrasenac::before{
+	content :"\f023";
+}
+input[type=checkbox]
+{
+  transform: scale(1.5);
+  padding: 10px;
+}
+
+.checkboxtexto
+{
+  padding:10px;
+  font-size: 110%;
+  display: inline;
+}
+button{
+	width: 60%;
+    margin: 5px 0 25px;
+}
