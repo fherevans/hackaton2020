@@ -14,29 +14,20 @@
   <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
-<body>
-	<nav class="fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex">
-	        <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
-	            <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav" onclick="abrirOcerrar()"><span style="cursor:pointer" onclick="abrirOcerrar()">&#9776;</span></button>
-	        </div>
+<body id="fondo1">
+	<nav class="fixed-top navbar navbar-light bg-white navbar-expand">
+        <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
+            <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav" onclick="abrirOcerrar()"><span style="cursor:pointer" onclick="abrirOcerrar()">&#9776;</span></button>
+        </div>
 
-	        <a href="#" class="navbar-brand has-logo
-	            ">
-	            <span class="logo d-none d-sm-inline">
-	                <img src="Imagenes/logos.png" alt="fciencias">
-	            </span>
-	    	</a>
+        <a href="#" class="navbar-brand has-logo
+            ">
+            <span class="logo d-none d-sm-inline">
+                <img src="Imagenes/logos.png" alt="fciencias" width="240" height="120">
+            </span>
+    	</a>
 
-	    	<ul class="navbar-nav d-none d-md-flex">
-	        <!-- custom_menu -->
-	        
-	        <!-- page_heading_menu -->
-	        
-	    </ul>
-	    <ul class="nav navbar-nav ml-auto">
-	        <div class="d-none d-lg-block">
-	            
-	        </div>
+	    <ul class="nav navbar-nav ml-auto" >
 
 	        <li class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
 
@@ -57,7 +48,7 @@
 	                            <!-- Aquí es donde se debe de poner el nombre del usuario -->
 	                            <i class="icon fa fa-user fa-fw " aria-hidden="true" title="Edith Araceli Reyes López" aria-label="Edith Araceli Reyes López"></i>
 	                                    <span class="menu-action-text" id="actionmenuaction-1">
-	                                        Edith Araceli Reyes López
+	                                        Luis Emmanuel
 	                                    </span>
 	                        </a>
 	                    	<div class="dropdown-divider"></div>
@@ -67,26 +58,26 @@
 	                                Tablero
 	                            </span>
 	                        </a>
-	                        <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-3">
+	                        <a href="Perfil.php" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-3">
 	                                <i class="icon fa fa-user fa-fw " aria-hidden="true" title="Perfil" aria-label="Perfil"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-3">
 	                                Perfil
 	                            </span>
 	                        </a>
-	                        <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-4">
+	                        <a href="Calificaciones.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-4">
 	                                <i class="icon fa fa-book fa-fw " aria-hidden="true" title="Calificaciones" aria-label="Calificaciones"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-4">
 	                                Calificaciones
 	                            </span>
 	                        </a>
-	                        <a href="https://moodle.fciencias.unam.mx/cursos/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-5">
+	                        <a href="Chat.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-5">
 	                                <i class="icon far fa-comment fa-fw " aria-hidden="true" title="Mensajes" aria-label="Mensajes"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-5">
 	                                Mensajes
 	                            </span>
 	                        </a>
 	                        <div class="dropdown-divider"></div>
-	                        <a href="https://moodle.fciencias.unam.mx/cursos/login/logout.php?sesskey=OPHxMTDkQW" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-7">
+	                        <a href="InicioSesion.php" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-7">
 	                                <i class="icon fas fa-sign-out-alt fa-fw " aria-hidden="true" title="Salir" aria-label="Salir"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-7">
 	                                Salir
@@ -102,9 +93,6 @@
 	</nav>
 
 	<div id="mySidenav" class="sidenav">
-	  <a href="#">About</a>
-	  <a href="#">Services</a>
-	  <a href="#">Clients</a>
 	  <a data-toggle="modal" data-target="#crearC" data-whatever="">Crear Curso</a>
 	  <a data-toggle="modal" data-target="#inscribirC" data-whatever="">Inscribir Curso</a>
 	</div>
@@ -142,7 +130,7 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Insribir Materia</h5>
+	        <h5 class="modal-title" id="exampleModalLabel">Inscribir Materia</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -157,7 +145,7 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-	        <button type="button" class="btn btn-primary">Insribir Materia</button>
+	        <button type="button" class="btn btn-primary">Inscribir Materia</button>
 	      </div>
 	    </div>
 	  </div>
@@ -176,7 +164,15 @@
 							    <div class="col-sm-11 border" >
 							    	<div class="card-body">
 										<h5 class="card-title d-inline">Avisos</h5>
-
+									</div>
+									<div>
+										<ul class="list-group">
+										  <li class="list-group-item">Cras justo odio</li>
+										  <li class="list-group-item">Dapibus ac facilisis in</li>
+										  <li class="list-group-item">Morbi leo risus</li>
+										  <li class="list-group-item">Porta ac consectetur ac</li>
+										  <li class="list-group-item">Vestibulum at eros</li>
+										</ul>
 									</div>
 
 							    </div>
@@ -185,14 +181,27 @@
 							    <div class="col-sm-5 border" style="margin-right: 30px">
 							    	<div class="card-body">
 										<h5 class="card-title d-inline">Tareas Pendientes</h5>
-
 									</div>
+									<div>
+										<ul class="list-group">
+										  <li class="list-group-item">Cras justo odio</li>
+										  <li class="list-group-item">Dapibus ac facilisis in</li>
+										  <li class="list-group-item">Morbi leo risus</li>
+										</ul>
+									</div>
+
 							    </div>
 
 							    <div class="col-sm-5 border"">
 							    	<div class="card-body">
 										<h5 class="card-title d-inline">Fechas de entrega</h5>
-
+									</div>
+									<div>
+										<ul class="list-group">
+										  <li class="list-group-item">Cras justo odio</li>
+										  <li class="list-group-item">Porta ac consectetur ac</li>
+										  <li class="list-group-item">Vestibulum at eros</li>
+										</ul>
 									</div>
 							    </div>
 							  </div>
@@ -230,7 +239,7 @@
 												</div>
 
 												<div class="media-body">
-						                            <h4 class="h5"><a id="mat'.$x.'" href="#">'.$row[0].'</a></h4>
+						                            <h4 class="h5"><a id="mat'.$x.'" href="clase.php">'.$row[0].'</a></h4>
 						                        </div>
 										    </div>';
 									}
@@ -308,15 +317,6 @@ $('#inscribirC').on('show.bs.modal', function (event) {
   //modal.find('.modal-body input').val(recipient)
 })
 
-$('.button').click(function() {
-  $.ajax({
-    type: "POST",
-    url: "crearCurso.php",
-    data: { materia: }
-  }).done(function( msg ) {
-    alert( "Data Saved: " + msg );
-  });
-});
 
 </script>
 

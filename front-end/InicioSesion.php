@@ -16,7 +16,7 @@
     <!-- Css-->
     <link rel="stylesheet" type="text/css" href="CSS/styles.css" th:href="@{/CSS/styles.css}">
 </head>
-<body id=fondo1>
+<body id="fondo1">
 	<div class="modal-dialog text-center">
 		<div class="col-sm-8 inicio-sesion">
 			<div class = "modal-content">
@@ -34,8 +34,8 @@
     					<input type="checkbox" class="form-check-input" id="exampleCheck1">
    						<label class="form-check-label" for="exampleCheck1">Recordarme</label>
   					</div>
-					<button type = "submit" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i>  Iniciar Sesión </button>
-					<button type = "submit" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i>  Regresar </button>
+					<button id="bR3" type="submit" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i>  Iniciar Sesión </button>
+					<button id="bR4" type="submit" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i>  Regresar </button>
 				</form>
 		</div>
 	</div>

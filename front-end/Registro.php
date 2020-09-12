@@ -51,8 +51,8 @@
        	
 
 
-					<button type = "submit" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i>  Registrarse </button>
-					<button type = "submit" class="btn btn-danger"><i class="fas fa-ban"></i>  Cancelar </button>
+					<button id="bR" type="submit" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i>  Registrarse </button>
+					<button id="bR2" type="submit" class="btn btn-danger"><i class="fas fa-ban"></i>  Cancelar </button>
 				</form>
 
 		</div>

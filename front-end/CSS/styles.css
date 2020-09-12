@@ -3,7 +3,6 @@ body {
   background-color: #E0FFFF;
   height: 100%
 }
-
 @media (max-width: 979px) {
   body {
     padding-top: 100px;
@@ -17,16 +16,6 @@ html{
     margin: 0;
     padding: 0;
 }
-#fondo1{
-   background: url(../Imagenes/bosque.jpg)no-repeat center center fixed;
-   background-size: cover;
-}
-#fondo2{
-   background: url(../Imagenes/bosque1.jpg)no-repeat center center fixed;
-   background-size: cover;
-}
-
-
 
  /* The side navigation menu */
 .sidenav {
@@ -72,6 +61,7 @@ html{
   transition: margin-left .5s;
   padding: 20px;
   height: 100%;
+  margin-top: 35px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -158,6 +148,20 @@ html{
   height: 18%;
   width: 100%;
 }
+
+.pt-3-half {
+padding-top: 1.4rem;
+}
+
+#fondo1{
+  background: url(../Imagenes/bosque.jpg)no-repeat center center fixed;
+  background-size: cover;
+}
+#fondo2{
+  background: url(../Imagenes/bosque1.jpg)no-repeat center center fixed;
+  background-size: cover;
+}
+
 .inicio-sesion{
   margin: 0 auto;
   margin-top: 25%;
@@ -185,7 +189,7 @@ html{
   height: 42px;
     font-size: 18px;
     border:0;
-    padding-left: 54px;
+    text-align: center;
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -204,7 +208,6 @@ html{
 }
 .registro{
   margin: 0 auto;
-  margin-top: 15%;
   padding:0;
 }
 
@@ -225,7 +228,7 @@ html{
   height: 42px;
     font-size: 18px;
     border:0;
-    padding-left: 54px;
+    text-align: center;
     border-radius: 5px;
 }
 .form-group-registro::before{
@@ -260,8 +263,8 @@ input[type=checkbox]
   font-size: 110%;
   display: inline;
 }
-button{
-  width: 60%;
-    margin: 5px 0 25px;
-}
 
+#bR, #bR2, #bR3, #bR4 {
+  width: 60%;
+  margin: 5px 0 25px;
+}

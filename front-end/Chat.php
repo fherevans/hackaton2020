@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
-<body>
-	<nav class="fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex">
+<body id="fondo1">
+	<nav class="fixed-top navbar navbar-light bg-white navbar-expand">
         <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
             <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav" onclick="abrirOcerrar()"><span style="cursor:pointer" onclick="abrirOcerrar()">&#9776;</span></button>
         </div>
@@ -23,20 +23,11 @@
         <a href="#" class="navbar-brand has-logo
             ">
             <span class="logo d-none d-sm-inline">
-                <img src="Imagenes/logos.png" alt="fciencias">
+                <img src="Imagenes/logos.png" alt="fciencias" width="240" height="120">
             </span>
     	</a>
 
-    	<ul class="navbar-nav d-none d-md-flex">
-        <!-- custom_menu -->
-        
-        <!-- page_heading_menu -->
-	        
-	    </ul>
-	    <ul class="nav navbar-nav ml-auto">
-	        <div class="d-none d-lg-block">
-	            
-	        </div>
+	    <ul class="nav navbar-nav ml-auto" >
 
 	        <li class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
 
@@ -57,42 +48,36 @@
 	                            <!-- Aquí es donde se debe de poner el nombre del usuario -->
 	                            <i class="icon fa fa-user fa-fw " aria-hidden="true" title="Edith Araceli Reyes López" aria-label="Edith Araceli Reyes López"></i>
 	                                    <span class="menu-action-text" id="actionmenuaction-1">
-	                                        Edith Araceli Reyes López
+	                                        Luis Emmanuel
 	                                    </span>
 	                        </a>
 	                    	<div class="dropdown-divider"></div>
-	                        <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-2">
+	                        <a href="Inicio.php" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-2">
 	                                <i class="icon fa fa-calendar-o fa-fw " aria-hidden="true" title="Tablero" aria-label="Tablero"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-2">
 	                                Tablero
 	                            </span>
 	                        </a>
-	                        <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-3">
+	                        <a href="Perfil.php" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-3">
 	                                <i class="icon fa fa-user fa-fw " aria-hidden="true" title="Perfil" aria-label="Perfil"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-3">
 	                                Perfil
 	                            </span>
 	                        </a>
-	                        <a href="#" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-4">
+	                        <a href="Calificaciones.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-4">
 	                                <i class="icon fa fa-book fa-fw " aria-hidden="true" title="Calificaciones" aria-label="Calificaciones"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-4">
 	                                Calificaciones
 	                            </span>
 	                        </a>
-	                        <a href="https://moodle.fciencias.unam.mx/cursos/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-5">
+	                        <a href="Chat.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-5">
 	                                <i class="icon far fa-comment fa-fw " aria-hidden="true" title="Mensajes" aria-label="Mensajes"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-5">
 	                                Mensajes
 	                            </span>
 	                        </a>
-	                        <a href="https://moodle.fciencias.unam.mx/cursos/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-6">
-	                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Preferencias" aria-label="Preferencias"></i>
-	                            <span class="menu-action-text" id="actionmenuaction-6">
-	                                Preferencias
-	                            </span>
-	                        </a>
 	                        <div class="dropdown-divider"></div>
-	                        <a href="https://moodle.fciencias.unam.mx/cursos/login/logout.php?sesskey=OPHxMTDkQW" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-7">
+	                        <a href="InicioSesion.php" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-7">
 	                                <i class="icon fas fa-sign-out-alt fa-fw " aria-hidden="true" title="Salir" aria-label="Salir"></i>
 	                            <span class="menu-action-text" id="actionmenuaction-7">
 	                                Salir
@@ -108,13 +93,65 @@
 	</nav>
 
 	<div id="mySidenav" class="sidenav">
-	  <a href="#">About</a>
-	  <a href="#">Services</a>
-	  <a href="#">Clients</a>
-	  <a href="#">Contact</a>
+	  <a data-toggle="modal" data-target="#crearC" data-whatever="">Crear Curso</a>
+	  <a data-toggle="modal" data-target="#inscribirC" data-whatever="">Inscribir Curso</a>
+	</div>
+
+	<div class="modal fade" id="crearC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Crear Curso</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="col-form-label">Nombre de la Materia</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="form-group">
+	            <label for="message-text" class="col-form-label">Descripción de la Materia</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Crear materia</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="inscribirC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Inscribir Materia</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="col-form-label">Nombre de la Materia</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Inscribir Materia</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 			
-	<div id="main" style="overflow : scroll;">
+	<div id="main">
 		<div id="b_chat" class="border">
 			<div id="contenedor" class="container-fluid" style="height: 100%;">
 			  	<div class="row justify-content-center" style="height: 100%;">
@@ -163,7 +200,7 @@
 								
 									<div class="col-sm-5 center" style="text-align: left; padding: 10px; height: auto; width: auto;">
 										<div class="border border-dark rounded" style="display:inline-block; float: left;"> 
-											<p style="padding: auto; margin: 4px;">Hola que tal? Cómo les va? Espero que muy bien XD</p> 
+											<p style="padding: auto; margin: 4px;">Que bruto! Pongale cero XD</p> 
 										</div>
 									</div>
 								</div>
@@ -175,7 +212,7 @@
 								
 									<div class="col-sm-5 center" style="text-align: left; padding: 10px; height: auto; width: auto;">
 										<div class="border border-dark rounded" style="float: left;"> 
-											<p style="padding: auto; margin: 4px;">Hola que tal? Cómo les va? Espero que muy bien XD</p> 
+											<p style="padding: auto; margin: 4px;">Te salio el ejercicio 3? </p> 
 										</div>
 									</div>
 								</div>
@@ -185,7 +222,7 @@
 								<div class="row justify-content-end">
 									<div class="col-sm-5 center" style="text-align: left; padding: 10px; height: auto; width: auto;">
 										<div class="border border-dark rounded" style="display:inline-block; float: right;"> 
-											<p style="padding: auto; margin: 4px;">Hola que tal? Cómo les va? Espero que muy bien XD</p> 
+											<p style="padding: auto; margin: 4px;">No pero terminando, jugamos among us?</p> 
 										</div>
 									</div>
 									<div class="col-sm-1 " style="padding: 5px; margin: 0; margin-top: 14px; display: flex;  height: auto; width: auto;">
@@ -291,9 +328,27 @@ function enviarMsj(){
 
 	var messageBody = document.querySelector('#muestra_msj');
 	messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
-
-
 }
+
+$('#crearC').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  //var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  //modal.find('.modal-title').text('New message to ' + recipient)
+  //modal.find('.modal-body input').val(recipient)
+})
+
+$('#inscribirC').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  //var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  //modal.find('.modal-title').text('New message to ' + recipient)
+  //modal.find('.modal-body input').val(recipient)
+})
 
 </script>
 

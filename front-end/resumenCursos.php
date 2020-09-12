@@ -23,7 +23,7 @@
 	        <a href="#" class="navbar-brand has-logo
 	            ">
 	            <span class="logo d-none d-sm-inline">
-	                <img src="Imagenes/logos.png" alt="fciencias">
+	                <img src="Imagenes/logos.png" alt="fciencias" width="240" height="120">
 	            </span>
 	    	</a>
 
